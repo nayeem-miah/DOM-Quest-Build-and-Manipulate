@@ -102,7 +102,7 @@ document.querySelectorAll(".donate-cart").forEach((card) => {
         const yourMainAccount = document.getElementById("your-amount");
         let yourMainAccountBalance = parseFloat(
             yourMainAccount.innerText.replace(/[^\d.]/g, "")
-          );
+        );
 
         if (isNaN(yourMainAccountBalance)) yourMainAccountBalance = 0;
         
@@ -140,5 +140,6 @@ document.querySelectorAll(".donate-cart").forEach((card) => {
 
     });
 });
+
   
 
