@@ -14,7 +14,7 @@
 </head>
 <body>
     <!-- navbar -->
-        <nav class="navbar bg-amber-50 shadow-sm">
+        <nav class="navbar bg-amber-50 shadow-sm fixed z-10 -mt-2 pt-2">
             <div class="navbar-start">
               <div class="dropdown">
                 <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
@@ -28,7 +28,7 @@
                   </ul>
                 </ul>
               </div>
-              <a href="./blog.html" class="btn btn-ghost bg-green-300 text-xl">Blog</a>
+              <a href="./blog.html" class="btn btn-outline bg-lime-400">Blog</a>
             </div>
             <div class="navbar-center hidden lg:flex">
               <ul class="menu menu-horizontal px-1 text-2xl font-bold flex gap-2">
@@ -42,42 +42,55 @@
     <!-- navbar end -->
 
     <!-- main content -->
-     <main>
-        <!-- button -->
-        <button class="btn btn-outline btn-secondary">Secondary</button>
+     <main class="pt-14 max-w-7xl mx-auto">
+        <!-- Donation and History button -->
+       <div class="flex justify-center gap-2 my-6 ">
+        <Donation class="btn btn-outline bg-lime-400">Donation</Donation>
+        <button class="btn btn-outline btn-Dontation">History</button>
+       </div>
 
-        <!-- hero -->
-        <div class="hero bg-base-200 min-h-screen">
-            <div class="hero-content flex-col lg:flex-row">
+        <!-- cart container -->
+          <div class="grid gap-8">
+            <div class="lg:flex bg-white border border-gray-300 rounded gap-10">
+              <div class="w-full p-4">
               <img
-                src="https://img.daisyui.com/images/stock/photo-1635805737707-575885ab0820.webp"
-                class="max-w-sm rounded-lg shadow-2xl"
-              />
-              <div>
-                <h1 class="text-5xl font-bold">Box Office News!</h1>
+              src="./assets/feni.png"
+              class=" rounded-lg shadow-2xl w-full"
+            />
+              </div>
+
+              <div class="p-3">
+                <div class="mt-3 flex gap-2">
+                  <img class="" src="./assets/coin.png" alt=""> <h3>5500</h3> <p>BDT</p>
+                </div>
+                <h1 class="text-2xl font-bold">Donate for floor at Naokhali, Bangladesh</h1>
                 <p class="py-6">
                   Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem
-                  quasi. In deleniti eaque aut repudiandae et a id nisi.
+                  quasi. In deleniti eaque aut repudiandae et a id nisi. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aperiam id ipsa eveniet inventore nostrum, deleniti enim? Soluta dignissimos quasi aliquam eius blanditiis, alias voluptatem reiciendis aliquid accusamus temporibus neque illum?
                 </p>
-                <button class="btn btn-primary">Get Started</button>
+                <input type="text" placeholder="write Donate amount" class="input  w-full" />
+                <br>
+                <button class="btn btn-outline bg-lime-400 w-full mt-2" onclick="my_modal_5.showModal()">Donate Now</button>
               </div>
             </div>
           </div>
+       
 
 
           <!-- modal -->
            <!-- Open the modal using ID.showModal() method -->
-<button class="btn" onclick="my_modal_5.showModal()">open modal</button>
 <dialog id="my_modal_5" class="modal modal-bottom sm:modal-middle">
-  <div class="modal-box">
-    <h3 class="text-lg font-bold">Hello!</h3>
-    <p class="py-4">Press ESC key or click the button below to close</p>
+  <div class="modal-box flex justify-center">
+   <div>
+    <h3 class="text-2xl text-center font-bold">Congress!</h3>
+    <img src="./assets/coin.png" alt="coin" class="mx-auto py-4">
+    <p class="py-4">your have donate success</p>
     <div class="modal-action">
       <form method="dialog">
-        <!-- if there is a button in form, it will close the modal -->
-        <button class="btn">Close</button>
+        <button class="btn">Close Confirmation</button>
       </form>
     </div>
+   </div>
   </div>
 </dialog>
      </main>
