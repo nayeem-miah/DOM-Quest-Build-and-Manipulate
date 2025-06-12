@@ -45,12 +45,12 @@
      <main class="pt-14 max-w-7xl mx-auto">
         <!-- Donation and History button -->
        <div class="flex justify-center gap-2 my-6 ">
-        <Donation class="btn btn-outline bg-lime-400">Donation</Donation>
-        <button class="btn btn-outline btn-Dontation">History</button>
+        <Donation class="btn btn-outline bg-lime-400" id="donate-btn">Donation</Donation>
+        <button class="btn btn-outline btn-Dontation" id="history-btn">History</button>
        </div>
 
         <!-- cart container -->
-          <div class=" gap-8 my-10 grid">
+          <div id="cart-container" class=" gap-8 my-10 grid">
             <div class="lg:flex bg-white border border-gray-300 rounded gap-10">
               <div class="w-full p-4">
               <img
@@ -120,7 +120,7 @@
           </div>
 
            <!-- History Cards -->
-        <div class="max-w-5xl mx-auto mt-8 my-5 hidden space-y-6 px-4">
+        <div id="History-container" class="max-w-5xl mx-auto mt-8 my-5 hidden space-y-6 px-4">
           <div class="bg-white p-6 rounded-xl shadow border">
             <h2 class="font-bold text-lg">96500 Taka is Donated for famine-2024 at Feni, Bangladesh</h2>
             <p class="text-gray-500 text-sm mt-1">Date : Tue Sep 17 2024 08:39:11 GMT +0600 (Bangladesh Standard Time)</p>
@@ -136,25 +136,24 @@
             <p class="text-gray-500 text-sm mt-1">Date : Tue Sep 17 2024 08:39:11 GMT +0600 (Bangladesh Standard Time)</p>
           </div>
         </div>
-       
 
-
+        
           <!-- modal -->
            <!-- Open the modal using ID.showModal() method -->
-<dialog id="my_modal_5" class="modal modal-bottom sm:modal-middle">
-  <div class="modal-box flex justify-center">
-   <div>
-    <h3 class="text-2xl text-center font-bold">Congress!</h3>
-    <img src="./assets/coin.png" alt="coin" class="mx-auto py-4">
-    <p class="py-4">your have donate success</p>
-    <div class="modal-action">
-      <form method="dialog">
-        <button class="btn">Close Confirmation</button>
-      </form>
-    </div>
-   </div>
-  </div>
-</dialog>
+        <dialog id="my_modal_5" class="modal modal-bottom sm:modal-middle">
+          <div class="modal-box flex justify-center">
+          <div>
+            <h3 class="text-2xl text-center font-bold">Congress!</h3>
+            <img src="./assets/coin.png" alt="coin" class="mx-auto py-4">
+            <p class="py-4">your have donate success</p>
+            <div class="modal-action">
+              <form method="dialog">
+                <button class="btn">Close Confirmation</button>
+              </form>
+            </div>
+          </div>
+          </div>
+        </dialog>
      </main>
 
      <!-- footer -->
@@ -216,5 +215,9 @@
           </div>
         </nav>
       </footer>
+
+
+      <!-- script -->
+       <script src="/js/donete.js"></script>
 </body>
 </html>
