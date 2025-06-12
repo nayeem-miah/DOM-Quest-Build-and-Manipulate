@@ -36,7 +36,7 @@
               </ul>
             </div>
             <div class="navbar-end flex gap-2">
-           <img class="" src="./assets/coin.png" alt=""> <h3>5500</h3> <p>BDT</p>
+           <img class="" src="./assets/coin.png" alt=""> <h3 id="your-amount">5500</h3> <p>BDT</p>
             </div>
         </nav>
     <!-- navbar end -->
@@ -51,7 +51,8 @@
 
         <!-- cart container -->
           <div id="cart-container" class=" gap-8 my-10 grid">
-            <div class="lg:flex bg-white border border-gray-300 rounded gap-10">
+
+            <div class="lg:flex bg-white border border-gray-300 rounded gap-10 donate-cart">
               <div class="w-full p-4">
               <img
               src="./assets/noakhali.png"
@@ -61,62 +62,66 @@
 
               <div class="p-3">
                 <div class="mt-3 flex gap-2">
-                  <img class="" src="./assets/coin.png" alt=""> <h3>5500</h3> <p>BDT</p>
+                  <img class="" src="./assets/coin.png" alt=""> <h3 id="total-donate-amount">500</h3> <p>BDT</p>
                 </div>
                 <h1 class="text-2xl font-bold">Donate for floor at Naokhali, Bangladesh</h1>
                 <p class="py-6">
                   Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem
                   quasi. In deleniti eaque aut repudiandae et a id nisi. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aperiam id ipsa eveniet inventore nostrum, deleniti enim? Soluta dignissimos quasi aliquam eius blanditiis, alias voluptatem reiciendis aliquid accusamus temporibus neque illum?
                 </p>
-                <input type="text" placeholder="write Donate amount" class="input  w-full" />
+               <form> <input type="text" id="input-donate-amount" placeholder="write Donate amount" class="input  w-full" required/>
                 <br>
-                <button class="btn btn-outline bg-lime-400 w-full mt-2" onclick="my_modal_5.showModal()">Donate Now</button>
+                <button type="submit" class="btn btn-outline bg-lime-400 w-full mt-2"  id="donate-cart-btn">Donate Now</button></form>
               </div>
             </div>
-            <div class="lg:flex bg-white border border-gray-300 rounded gap-10">
+
+
+            <!-- <div class="lg:flex bg-white border border-gray-300 rounded gap-10 donate-cart">
               <div class="w-full p-4">
               <img
-              src="./assets/feni.png"
+              src="./assets/noakhali.png"
               class=" rounded-lg shadow-2xl w-full"
             />
               </div>
 
               <div class="p-3">
                 <div class="mt-3 flex gap-2">
-                  <img class="" src="./assets/coin.png" alt=""> <h3>5500</h3> <p>BDT</p>
+                  <img class="" src="./assets/coin.png" alt=""> <h3 id="total-donate-amount">500</h3> <p>BDT</p>
                 </div>
-                <h1 class="text-2xl font-bold">Donate for floor at Feni, Bangladesh</h1>
+                <h1 class="text-2xl font-bold">Donate for floor at Naokhali, Bangladesh</h1>
                 <p class="py-6">
                   Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem
                   quasi. In deleniti eaque aut repudiandae et a id nisi. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aperiam id ipsa eveniet inventore nostrum, deleniti enim? Soluta dignissimos quasi aliquam eius blanditiis, alias voluptatem reiciendis aliquid accusamus temporibus neque illum?
                 </p>
-                <input type="text" placeholder="write Donate amount" class="input  w-full" />
+               <form> <input type="number" id="input-donate-amount" placeholder="write Donate amount" class="input  w-full" required/>
                 <br>
-                <button class="btn btn-outline bg-lime-400 w-full mt-2" onclick="my_modal_5.showModal()">Donate Now</button>
+                <button type="submit" class="btn btn-outline bg-lime-400 w-full mt-2"  id="donate-cart-btn">Donate Now</button></form>
               </div>
             </div>
-            <div class="lg:flex bg-white border border-gray-300 rounded gap-10">
-              <div class="w-full p-4">
+
+            <div class="lg:flex bg-white border border-gray-300 rounded gap-10 donate-cart">
+                 <div class="w-full p-4">
               <img
-              src="./assets/quota-protest.png"
+              src="./assets/noakhali.png"
               class=" rounded-lg shadow-2xl w-full"
             />
               </div>
 
               <div class="p-3">
                 <div class="mt-3 flex gap-2">
-                  <img class="" src="./assets/coin.png" alt=""> <h3>5500</h3> <p>BDT</p>
+                  <img class="" src="./assets/coin.png" alt=""> <h3 id="total-donate-amount">500</h3> <p>BDT</p>
                 </div>
-                <h1 class="text-2xl font-bold">Donate for quota-protest at Bangladesh</h1>
+                <h1 class="text-2xl font-bold">Donate for floor at Naokhali, Bangladesh</h1>
                 <p class="py-6">
                   Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem
                   quasi. In deleniti eaque aut repudiandae et a id nisi. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aperiam id ipsa eveniet inventore nostrum, deleniti enim? Soluta dignissimos quasi aliquam eius blanditiis, alias voluptatem reiciendis aliquid accusamus temporibus neque illum?
                 </p>
-                <input type="text" placeholder="write Donate amount" class="input  w-full" />
+               <form> <input type="number" id="input-donate-amount" placeholder="write Donate amount" class="input  w-full" required/>
                 <br>
-                <button class="btn btn-outline bg-lime-400 w-full mt-2" onclick="my_modal_5.showModal()">Donate Now</button>
+                <button type="submit" class="btn btn-outline bg-lime-400 w-full mt-2"  id="donate-cart-btn">Donate Now</button></form>
               </div>
-            </div>
+            </div> -->
+
           </div>
 
            <!-- History Cards -->
