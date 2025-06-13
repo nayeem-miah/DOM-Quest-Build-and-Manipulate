@@ -142,7 +142,12 @@ document.querySelectorAll(".donate-cart").forEach((card) => {
         // show history
         const donateTTile = card.querySelector(".donate-title");
         const currentDate = new Date();
-        
+        const noHistoryMessage = document.getElementById("no-history-message");
+
+        // Remove "No history found" if it's there
+        if (noHistoryMessage) {
+        noHistoryMessage.remove();
+        }
 
         // history container
         const historyContainer = document.getElementById("History-container");
@@ -156,4 +161,5 @@ document.querySelectorAll(".donate-cart").forEach((card) => {
 });
 
   
-
+const historyContainer = document.getElementById("History-container");
+console.log(historyContainer);
