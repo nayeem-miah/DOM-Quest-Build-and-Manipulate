@@ -138,6 +138,20 @@ document.querySelectorAll(".donate-cart").forEach((card) => {
             modal.showModal();
         };
 
+
+        // show history
+        const donateTTile = card.querySelector(".donate-title");
+        const currentDate = new Date();
+        
+
+        // history container
+        const historyContainer = document.getElementById("History-container");
+        const div = document.createElement("div");
+        div.innerHTML = ` <div class="bg-white p-6 rounded-xl shadow border">
+            <h2 class="font-bold text-lg">${inputAmount} ${donateTTile.innerText}</h2>
+            <p class="text-gray-500 text-sm mt-1">Date : ${currentDate}</p>
+          </div>`
+        historyContainer.appendChild(div);
     });
 });
 
