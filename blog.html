@@ -21,29 +21,54 @@
          </div>
   </div>
 
-  <!-- Buttons -->
-  <div class="flex justify-center mt-8 gap-4">
-    <button class="border border-gray-400 px-6 py-2 rounded">Donation</button>
-    <button class="bg-lime-400 px-6 py-2 rounded font-bold">History</button>
-  </div>
 
-  <!-- History Cards -->
-  <div class="max-w-4xl mx-auto mt-8 space-y-6 px-4">
-    <div class="bg-white p-6 rounded-xl shadow border">
-      <h2 class="font-bold text-lg">96500 Taka is Donated for famine-2024 at Feni, Bangladesh</h2>
-      <p class="text-gray-500 text-sm mt-1">Date : Tue Sep 17 2024 08:39:11 GMT +0600 (Bangladesh Standard Time)</p>
-    </div>
-    
-    <div class="bg-white p-6 rounded-xl shadow border">
-      <h2 class="font-bold text-lg">6500 Taka is Donated for Flood Relief in Feni, Bangladesh</h2>
-      <p class="text-gray-500 text-sm mt-1">Date : Tue Sep 17 2024 08:39:11 GMT +0600 (Bangladesh Standard Time)</p>
-    </div>
 
-    <div class="bg-white p-6 rounded-xl shadow border">
-      <h2 class="font-bold text-lg">15500 Taka is Donated for Aid for Injured in the Quota Movement, Bangladesh</h2>
-      <p class="text-gray-500 text-sm mt-1">Date : Tue Sep 17 2024 08:39:11 GMT +0600 (Bangladesh Standard Time)</p>
-    </div>
-  </div>
+  <!-- Main Content -->
+  <main class="max-w-4xl mx-auto p-6 space-y-6">
+    <section>
+      <h2 class="text-2xl font-semibold text-blue-700 mb-2">What is the DOM?</h2>
+      <p>
+        The <strong>DOM (Document Object Model)</strong> is a programming interface for web documents. It represents the page so that programs can change the document structure, style, and content. The DOM represents the document as a tree of nodes.
+      </p>
+    </section>
+
+    <section>
+      <h2 class="text-2xl font-semibold text-blue-700 mb-2">DOM Tree Structure</h2>
+      <p>
+        Every HTML element becomes a node in the DOM tree. For example:
+      </p>
+      <pre class="bg-gray-100 p-4 rounded text-sm overflow-auto">
+&lt;html&gt;
+&lt;body&gt;
+  &lt;h1&gt;Title&lt;/h1&gt;
+  &lt;p&gt;Paragraph&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+      </pre>
+      <p>This structure is represented in memory as a tree of objects.</p>
+    </section>
+
+    <section>
+      <h2 class="text-2xl font-semibold text-blue-700 mb-2">Common DOM Methods</h2>
+      <ul class="list-disc list-inside space-y-1">
+        <li><code>document.getElementById('id')</code></li>
+        <li><code>document.getElementsByClassName('class')</code></li>
+        <li><code>document.querySelector('selector')</code></li>
+        <li><code>element.innerHTML</code> – Get or set HTML inside an element</li>
+        <li><code>element.addEventListener('event', function)</code></li>
+      </ul>
+    </section>
+
+    <section>
+      <h2 class="text-2xl font-semibold text-blue-700 mb-2">Why is DOM Important?</h2>
+      <p>
+        The DOM allows developers to create dynamic websites by enabling content manipulation, event handling, and more—all in real-time without reloading the page.
+      </p>
+    </section>
+  </main>
+
+  
 
 </body>
 </html>
+
