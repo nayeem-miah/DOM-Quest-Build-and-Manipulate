@@ -98,11 +98,10 @@ document.querySelectorAll(".donate-cart").forEach((card) => {
 
         const inputField = card.querySelector("input");
         const totalDonateAmount = card.querySelector("#total-donate-amount");
-
         const yourMainAccount = document.getElementById("your-amount");
-        let yourMainAccountBalance = parseFloat(
-            yourMainAccount.innerText.replace(/[^\d.]/g, "")
-        );
+        // get text getIdByTextValue
+        const yourMainAccountBalance = getIdByTextValue("your-amount")
+       
 
         if (isNaN(yourMainAccountBalance)) yourMainAccountBalance = 0;
         
@@ -146,7 +145,7 @@ document.querySelectorAll(".donate-cart").forEach((card) => {
 
         // Remove "No history found" if it's there
         if (noHistoryMessage) {
-        noHistoryMessage.remove();
+            noHistoryMessage.remove();
         }
 
         // history container
@@ -160,6 +159,3 @@ document.querySelectorAll(".donate-cart").forEach((card) => {
     });
 });
 
-  
-const historyContainer = document.getElementById("History-container");
-console.log(historyContainer);
